@@ -1,0 +1,50 @@
+/* style.css */
+
+/* Custom styles for a cleaner look and feel */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom styling for range sliders for better cross-browser compatibility */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Track styling for Webkit browsers (Chrome, Safari) */
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #dbeafe; /* blue-100 */
+    height: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/* Track styling for Firefox */
+input[type="range"]::-moz-range-track {
+    background: #dbeafe; /* blue-100 */
+    height: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/* Thumb styling for Webkit browsers */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -4px; /* Center thumb on the track */
+    background-color: #2563eb; /* blue-600 */
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 9999px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Thumb styling for Firefox */
+input[type="range"]::-moz-range-thumb {
+    border: none;
+    border-radius: 9999px;
+    background-color: #2563eb; /* blue-600 */
+    height: 1.25rem;
+    width: 1.25rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
